@@ -46,6 +46,30 @@ $(document).ready(function () {
 
   $('#theme-toggle').on('click', toggleTheme);
 
+  // Language toggle (EN/ZH)
+  var setLang = function (lang) {
+    const use_lang =
+      lang ||
+      localStorage.getItem("lang") ||
+      (navigator.language && navigator.language.startsWith("zh") ? "zh" : "en");
+
+    $("html").attr("data-lang", use_lang);
+    $("#lang-label").text(use_lang === "zh" ? "中文" : "EN");
+    if (lang) {
+      localStorage.setItem("lang", use_lang);
+    }
+  };
+
+  setLang();
+
+  var toggleLang = function () {
+    const current_lang = $("html").attr("data-lang");
+    const new_lang = current_lang === "zh" ? "en" : "zh";
+    setLang(new_lang);
+  };
+
+  $('#lang-toggle').on('click', toggleLang);
+
   // These should be the same as the settings in _variables.scss
   const scssLarge = 925; // pixels
 

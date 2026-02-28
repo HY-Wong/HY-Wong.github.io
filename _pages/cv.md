@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+title_zh: "履歷"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +10,68 @@ redirect_from:
 
 {% include base_path %}
 
+<div lang="en" markdown="1">
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* University of Mannheim, MSc in Data Science, 2025
+* National Taiwan University, BBA in Finance, Minor in CSIE, 2019
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* AI Engineer
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
+<!-- * Skill 1
 * Skill 2
   * Sub-skill 2.1
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Skill 3 -->
 
-Publications
+Intersts
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* Tennis
+* Baseball
+* Pen calligraphy
+* Classical music (cello)
+* Architecture
+* Movie
+
+<!-- Add more English CV content here -->
+
+</div>
+
+<div lang="zh" markdown="1">
+
+學歷
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* 曼海姆大學，資料科學系碩士，2025
+* 國立臺灣大學，財務金融學系學士，輔修資訊工程學系，2019
+
+工作經歷
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* AI 工程師
+
+技能
 ======
-* Currently signed in to 43 different slack teams
+<!-- * 技能 1
+* 技能 2
+  * 子技能 2.1
+  * 子技能 2.2
+  * 子技能 2.3
+* 技能 3 -->
+
+興趣
+======
+* 網球
+* 棒球
+* 硬筆書法
+* 古典音樂 (大提琴)
+* 建築
+* 電影
+
+<!-- 在這裡新增更多中文履歷內容 -->
+
+</div>

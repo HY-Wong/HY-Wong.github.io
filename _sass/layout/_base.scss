@@ -318,6 +318,49 @@ nav {
 }
 
 /* ==========================================================================
+   LANGUAGE TOGGLE
+   ========================================================================== */
+
+[lang="zh"] {
+  display: none;
+}
+
+html[data-lang="zh"] {
+  [lang="en"] {
+    display: none;
+  }
+
+  [lang="zh"] {
+    display: revert;
+  }
+}
+
+// Inside the masthead, use visibility instead of display
+// so both lang spans contribute to width (no jump on toggle).
+// Disable transition so the switch is instant (no overlap).
+.greedy-nav .visible-links {
+  [lang] {
+    transition: none;
+  }
+
+  [lang="zh"] {
+    display: revert;
+    visibility: hidden;
+  }
+
+  html[data-lang="zh"] & {
+    [lang="en"] {
+      display: revert;
+      visibility: hidden;
+    }
+
+    [lang="zh"] {
+      visibility: visible;
+    }
+  }
+}
+
+/* ==========================================================================
    ANIMATIONS
    ========================================================================== */
 

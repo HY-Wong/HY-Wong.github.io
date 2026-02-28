@@ -234,6 +234,26 @@
       }
     }
 
+    #lang-toggle {
+      a {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        white-space: nowrap;
+        min-width: 2.5em;
+      }
+    }
+
+    // Stack both lang spans in the same grid cell so the wider
+    // language always sets the width — no layout jump on toggle.
+    .masthead__menu-item > a {
+      display: inline-grid;
+
+      > [lang] {
+        grid-area: 1 / 1;
+      }
+    }
+
     a {
       position: relative;
 

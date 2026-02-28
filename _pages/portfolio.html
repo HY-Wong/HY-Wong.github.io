@@ -1,14 +1,29 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
+title_zh: "專案"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<div lang="en">
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
 
+<!-- Add more English project content here -->
+
+</div>
+
+<div lang="zh">
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!-- 在這裡新增更多中文專案內容 -->
+
+</div>
